@@ -1,6 +1,6 @@
 {
   "name": "@efi.shtain/jest-sequelize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Drop in for mocking sequelize models",
   "main": "src/index.js",
   "scripts": {
