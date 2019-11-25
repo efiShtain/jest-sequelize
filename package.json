@@ -1,0 +1,20 @@
+{
+  "name": "@efi.shtain/jest-sequelize",
+  "version": "0.0.1",
+  "description": "Drop in for mocking sequelize models",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efiShtain/jest-sequelize.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efiShtain/jest-sequelize/issues"
+  },
+  "homepage": "https://github.com/efiShtain/jest-sequelize#readme"
+}
