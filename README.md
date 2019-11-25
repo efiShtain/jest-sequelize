@@ -9,23 +9,20 @@ Best way to use this module is through a jest.setup file.
 - In your jest config, add a sequelize-mock.js file to the setupFilesAfterEnv array
 (You can use an existing file if you already have one)
 - Paste the following lines to the top of the file:
+
 ```javascript
-const path = require("path");
-const modelsPath = path.join(__dirname, "./models");
-const jestSequelize = require("@efi.shtain/jest-sequelize");
-
-// will default to ["find", "findOne", "create", "update"]
-const mocker = jestSequelize(modelsPath); 
-
-// Another option is passing the list of functions you want to spy on in a model
-const modelsMock = jestSequelize(modelsPath, ["findOne"]);
-
-jest.mock("./models", () => modelsMock);
+jest.mock("./models", () => {
+  const path = require("path");
+  const jestSequelize = require("@efi.shtain/jest-sequelize");
+  const modelsPath = path.join(process.cwd(), "./models");
+  return jestSequelize(modelsPath);
+});
 module.exports = async () => {};
 ```
 
 - All set! Happy jesting!
-const { User } = require("../../models");
+
+
 
 ## Test Example
 
