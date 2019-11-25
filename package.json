@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/efiShtain/jest-sequelize.git"
   },
-  "keywords": [],
+  "keywords": ["jest","sequelize","mock","test","testing","mocking", "unitest"],
   "author": "",
   "license": "ISC",
   "bugs": {
